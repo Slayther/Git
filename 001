@@ -1,1 +1,2 @@
-git config --global alias.autopush '!cd "$PWD" && git add * && git commit -m "$1" && git push origin master'
+git config --global alias.autopush '!echo "Adding all files..." && git add * && !echo "Commiting..." && git commit -m "$1" && !echo "Pushing..." && git push origin master'
+git config --global alias.rmignore '!echo Removing ignore files... && git rm -r --cached . && git add * && git commit -am "Remove ignored files" && git push origin master'
