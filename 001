@@ -1,2 +1,12 @@
-git config --global alias.autopush '!echo "Adding all files..." && git add * && !echo "Commiting..." && git commit -m "$1" && !echo "Pushing..." && git push origin master'
-git config --global alias.rmignore '!echo Removing ignore files... && git rm -r --cached . && git add * && git commit -am "Remove ignored files" && git push origin master'
+git config --global alias.aliasCommandName '!non-git-command && git command'
+
+# Push
+git add *
+git commit -m "Commit message"
+git push origin master
+
+# Remove ignored files
+git rm -r --cached .
+git add *
+git commit -am "Remove ignored files"
+git push origin master
