@@ -1,0 +1,4 @@
+set /p value= Prompt (default value): 
+IF [%value%] == [] set value= default value
+cls
+%value%
